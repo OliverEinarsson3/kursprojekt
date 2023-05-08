@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="shoppingcart.js"></script>
 </head>
-<body onload="window.onload()">
+<body onload="loadCart()">
     <div id="topbarMain">
         <img src="formula-1.png">
         <div id="cart">
@@ -67,9 +67,10 @@
       </tbody>
     </table>
     <div>
-      <h3>Total Price: <span id="total-price">$0.00</span></h3>
       <button onclick="clearCart()">Clear Cart</button>
     </div>
+    <div id="landing" style="width: 500px; height: 500px; display: flex; flex-direction: row !important;"></div>
+    <button type="button" onclick="location.href='checkout.html';">Checkout</button>
 
   
     

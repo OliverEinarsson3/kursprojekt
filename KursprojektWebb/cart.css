@@ -37,3 +37,12 @@
     width: 140px;
     border-radius: 10px;
   }
+
+  .div-test{
+    
+  }
+
+#landing{
+  display: flex;
+  flex-direction: row;
+}

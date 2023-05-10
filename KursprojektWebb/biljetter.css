@@ -1,3 +1,13 @@
+body {
+  background-image: url(bakgrund2.avif);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#backgorund-image{
+    opacity: 0.5;
+}
 
 .products{
     display: flex;
@@ -6,24 +16,30 @@
     margin: 4%;
     font-size: 200%;
     gap: 5%;
-
-    
+    row-gap: 8%;
+    margin-left: 8%;
+    margin-bottom: 10%;
 }
 
 #biljettruta{
     display: flex;
-    height: 100%;
-    width: 98%;
+    height: 95%;
+    width: 130%;
     gap: 5%;
     flex-direction: column;
     margin-top: 2%;
     text-decoration: none !important;
     color: black !important;
     border: black;
+    background-color: lightgray;
+    opacity: 0.8;
+    
 }
 
 #addToCart{
     margin-bottom: 30%;
+    width: 50%;
+    margin-left: 25%;
 }
 
 

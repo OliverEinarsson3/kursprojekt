@@ -94,3 +94,43 @@ a:link {
 }
 
 
+@media only screen and (max-width: 768px) {
+    #lagRuta {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    #lagRuta img {
+      width: 30%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    #lagRuta span {
+      font-size: 200%;
+    }
+  
+    #lagRuta h5 {
+      font-size: 150%;
+    }
+  
+    #lagInfo img {
+      height: 30%;
+      width: 50%;
+    }
+  
+    #lagInfo span {
+      font-size: 300%;
+    }
+  
+    #lagInfo h5 {
+      font-size: 150%;
+    }
+  
+    #lagInfo h6 {
+      font-size: 100%;
+    }
+  }
+  
+  
+  

@@ -38,12 +38,12 @@
     width: 9%;
     border: gray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #FF4742;
-    border: 1px solid #FF4742;
+    background: red;
+    border: 1px solid red;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: white;
     cursor: pointer;
     display: inline-block;
     font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
@@ -71,3 +71,23 @@ a:hover{
     height: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+    #topbarMain img {
+      width: 15%;
+    }
+  
+    #cart {
+      margin-left: 70%;
+    }
+  
+    #topbarNav {
+      height: auto;
+    }
+  
+    #topbarNav button {
+      width: 45%;
+      margin-left: 2%;
+      margin-right: 2%;
+      margin-bottom: 2%;
+    }
+  }

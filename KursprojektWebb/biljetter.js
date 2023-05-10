@@ -27,7 +27,7 @@ async function loadData() {
   
         output += `
             <div id="alla">
-                <div id="biljettruta" style="border: 2px solid black; padding: 10px; border-radius:29px; margin-right: 5%;">
+                <div id="biljettruta" style="border: 3px solid black;  border-radius:29px; margin-right: 5%; margin-top: 10%; ">
                 <img src="${item.bild}" alt="Lmao">
                 <span>${item.land}</span>
                 <h5>${item.datum}</h5>

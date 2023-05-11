@@ -1,9 +1,9 @@
-// ladda in alla varor
+
 async function loadData() {
 
 
     return new Promise((resolve) => {
-        fetch("./förare.json", { mode: "no-cors" }).then((respone) => (
+        fetch("./förare.json", { mode: "no-cors" }).then((respone) => ( //Hämta data från JSON
             respone.json()
         )).then((jsonFromFile) => {
             resolve(jsonFromFile);
@@ -20,11 +20,10 @@ async function loadData() {
 
 
     let output = "";
-    // vänta på loadData har returnerat datan
     var data = await loadData();
   
   
-    for (let item of data) {
+    for (let item of data) { //det som ska displayas
         if(item.id == id){
     
             output += `
@@ -52,4 +51,3 @@ async function loadData() {
 
 };
 
-//<a href="${item.href}"><img src="${item.image}" alt="Lol"></a>

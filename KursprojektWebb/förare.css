@@ -1,4 +1,4 @@
-#förarRuta{
+#förarRuta{ /*Allt här är style för rutorna som har information om förarna och style för det som kommer när man trycker på dem*/
     display: flex;
     height: 100%;
     width: 98%;

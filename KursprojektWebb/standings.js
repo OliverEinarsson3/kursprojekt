@@ -1,4 +1,4 @@
-fetch('http://ergast.com/api/f1/2023/driverStandings.json')
+fetch('http://ergast.com/api/f1/2023/driverStandings.json') //ChatGPT javascript för API
   .then(response => response.json())
   .then(data => {
     const table = document.createElement('table');

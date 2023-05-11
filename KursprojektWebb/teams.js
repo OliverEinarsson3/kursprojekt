@@ -1,9 +1,9 @@
-// ladda in alla varor
+
 async function loadData() {
 
 
     return new Promise((resolve) => {
-        fetch("./teams.json", { mode: "no-cors" }).then((respone) => (
+        fetch("./teams.json", { mode: "no-cors" }).then((respone) => ( //hämtar data från JSON
             respone.json()
         )).then((jsonFromFile) => {
             resolve(jsonFromFile);
@@ -21,11 +21,11 @@ async function loadData() {
 
 
     let output = "";
-    // vänta på loadData har returnerat datan
+   
     var data = await loadData();
   
   
-    for (let item of data) {
+    for (let item of data) { //displayar det som ska visas i rutorna
   
         output += `
             <a href="${item.href}"><div id="lagRuta" style="border: 2px solid black; padding: 10px; border-radius:29px; margin-right: 5%;">

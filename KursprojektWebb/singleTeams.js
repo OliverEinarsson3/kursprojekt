@@ -3,7 +3,7 @@ async function loadData() {
 
 
     return new Promise((resolve) => {
-        fetch("./teams.json", { mode: "no-cors" }).then((respone) => (
+        fetch("./teams.json", { mode: "no-cors" }).then((respone) => ( //hämta data från JSON
             respone.json()
         )).then((jsonFromFile) => {
             resolve(jsonFromFile);
@@ -20,11 +20,11 @@ async function loadData() {
 
 
     let output = "";
-    // vänta på loadData har returnerat datan
+
     var data = await loadData();
   
   
-    for (let item of data) {
+    for (let item of data) { //det som ska displayas i var och en av rutorna när man klickar på dem
         if(item.id == id){
     
             output += `

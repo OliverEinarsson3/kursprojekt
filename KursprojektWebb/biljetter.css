@@ -1,15 +1,15 @@
 body {
-  background-image: url(bakgrund2.avif);
+  background-image: url(bakgrund2.avif); /*bakgrund*/
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-#backgorund-image{
+#backgorund-image{ /*opacity så man ser köprutorna*/
     opacity: 0.5;
 }
 
-.products{
+.products{  /*resten är bara style till rutorna så att dem ser bra ut och inte gpr utanför skärmen*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

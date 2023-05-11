@@ -1,21 +1,21 @@
 function loadCart(){
-  // Get the cart from local storage
-  let cart = JSON.parse(localStorage.getItem('cart')) || [];
   
-  // Loop through the items and display them in the cart
+  let cart = JSON.parse(localStorage.getItem('cart')) || []; //Hämta informationen
+  
+  
   const cartTable = document.getElementById('cart-table');
-  cartTable.innerHTML = ''; // clear the cart table before re-populating
+  cartTable.innerHTML = ''; 
   cart.forEach(item => {
-    const row = document.createElement('tr');
+    const row = document.createElement('tr'); //det som ska komma på display
     row.innerHTML = `
-      <td>${item.land}</td>
-      <td>$${item.pris}</td>
+      <td>${item.land}</td> 
+      <td>${item.pris}</td>
     `;
     cartTable.appendChild(row);
   });
 }
 
-function clearCart() {
+function clearCart() { //för att tömma carten
   let cart = [];
   localStorage.removeItem('cart');
   console.log("Items cleared from cart.");

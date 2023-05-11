@@ -1,7 +1,7 @@
 async function loadData() {
 
 
-    return new Promise((resolve) => {
+    return new Promise((resolve) => {   /*Tar data från JSON filen*/ 
         fetch("./biljetter.json", { mode: "no-cors" }).then((respone) => (
             respone.json()
         )).then((jsonFromFile) => {
@@ -23,9 +23,9 @@ async function loadData() {
     var data = await loadData();
   
   
-    for (let item of data) {
+    for (let item of data) { /*Displayar all information. Jag gjorde detta för att samla all information på ett smidigt ställe.*/
   
-        output += `
+        output += `  
             <div id="alla">
                 <div id="biljettruta" style="border: 3px solid black;  border-radius:29px; margin-right: 5%; margin-top: 10%; ">
                 <img src="${item.bild}" alt="Lmao">

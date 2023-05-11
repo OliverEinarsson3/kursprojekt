@@ -1,6 +1,6 @@
+/*CSS för raceschemat. Inte mycket stil men det fungerar*/
 
-
-h1 {
+h1 {  
     font-size: 250%;
     margin-right: 5%;
     text-decoration: underline;
@@ -14,13 +14,13 @@ table {
   }
   
   thead {
-    background-color: #ccc;
+    background-color: white;
   }
   
   th, td {
     padding: 10px;
     text-align: left;
-    border: 1px solid #999;
+    border: 1px solid gray;
     font-size: 150%;
   }
   
@@ -30,5 +30,5 @@ table {
   }
   
   tbody tr:hover {
-    background-color: #eee;
+    background-color: white;
   }

@@ -1,4 +1,4 @@
-#lagRuta{
+#lagRuta{  /*vanlig styling, nästan samma som den för individuella förarna*/
     display: flex;
     height: 100%;
     width: 98%;
@@ -94,7 +94,7 @@ a:link {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { /*responsivitet för iphone SE*/
     #lagRuta {
       flex-direction: column;
       width: 90%;

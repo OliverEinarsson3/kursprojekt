@@ -6,7 +6,7 @@
     
 }
 
-#kontakt header{
+#kontakt header{ /*bara lite simpel CSS för knotaktsidan gjord under stress för att bli klar*/
     display: flex;
     align-items: center;
     margin-left: 40%;

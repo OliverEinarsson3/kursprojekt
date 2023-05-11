@@ -1,5 +1,5 @@
 // Retrieve data from API
-fetch('http://ergast.com/api/f1/2023.json')
+fetch('http://ergast.com/api/f1/2023.json') /*API*/
   .then(response => response.json())
   .then(data => {
     // Extract relevant information from JSON object

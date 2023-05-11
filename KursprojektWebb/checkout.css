@@ -1,4 +1,4 @@
-form {
+form {  /*style och HTML tagen från en annan hemsida för att jag inte kunde lista ut hur man gjorde det. Den är inte viktig för hemsidan men en bra detalj*/
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,4 +1,4 @@
-fetch('http://ergast.com/api/f1/2023/constructorStandings.json')
+fetch('http://ergast.com/api/f1/2023/constructorStandings.json') /*Använder sig av API och printar ut real-time resultat*/
   .then(response => response.json())
   .then(data => {
     const table = document.createElement('table');

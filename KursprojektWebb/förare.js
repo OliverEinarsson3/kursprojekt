@@ -2,7 +2,7 @@
 async function loadData() {
 
 
-    return new Promise((resolve) => {
+    return new Promise((resolve) => { /*tar informationen med allt om förarna*/
         fetch("./förare.json", { mode: "no-cors" }).then((respone) => (
             respone.json()
         )).then((jsonFromFile) => {
@@ -24,7 +24,7 @@ async function loadData() {
     var data = await loadData();
   
   
-    for (let item of data) {
+    for (let item of data) { /*Printar ut all data med hjälp av ID*/
   
         output += `
             <a href="${item.href}"><div id="förarRuta" style="border: 2px solid black; padding: 10px; border-radius:29px; margin-right: 5%;">
